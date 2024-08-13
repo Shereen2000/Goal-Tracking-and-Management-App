@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" asp-href-include="/lib/bootstrap/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" asp-href-include="/lib/font-awesome/css/all.min.css" />
+
+    <title>@ViewData["Title"] - Goal Tracking</title>
+
+    @RenderSection("Styles", required: false)
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">Goal Managament and Tracking</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#MyNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="MyNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
+                    @if(User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item"><a class="nav-link" asp-controller="Goal" asp-action="Index">Goals</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Goal" asp-action="GoalTrackingBoard">Goal Tracking Board</a></li>
+                    }
+                </ul>
+
+                <ul class="navbar-nav navbar-right">
+                    @if(User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-link">@User.Identity.Name</li>
+                        <li class="nav-item">
+                            <form asp-controller="Account" asp-action="Logout" method="post">
+                                <button class="btn btn-link nav-link" type="submit">Log Out</button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Account" asp-action="Login">Log in </a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="pb-3">
+            @RenderBody()
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="border-top footer text-muted text-center small">
+            <p>Developed by: SHEREEN MOKAUTU<br />
+        </div>
+    </div>
+
+    <!-- Render scripts section -->
+    @RenderSection("Scripts", required: false)
+
+    <script asp-src-include="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+

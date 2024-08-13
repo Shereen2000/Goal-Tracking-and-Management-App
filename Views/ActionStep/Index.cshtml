@@ -1,0 +1,80 @@
+﻿@model ActionStepViewModel
+
+@{
+    ViewData["Title"] = "Action Steps";
+}
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        @TempData["Message"]
+    </div>
+}
+
+<p class="p-3">
+    <a class="btn btn-primary" asp-action="Add" asp-route-goalId="@ViewData["GoalId"]">Add New Action Step</a>
+</p>
+
+@if (Model.Actions != null && Model.Actions.Any())
+{
+    <div class="container">
+        <div class="row">
+            @foreach (var actionStep in Model.Actions)
+            {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">
+                            <h3 class="card-title">@actionStep.Subject</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Status:</strong> @actionStep.Status</p>
+                            <p><strong>Due Date:</strong> @actionStep.DueDate.ToShortDateString()</p>
+                        </div>
+                        <div class="card-footer text-end">
+                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                <a class="btn btn-info" asp-action="Details" asp-route-id="@actionStep.ActionStepId">Details</a>
+                                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@actionStep.ActionStepId">Edit</a>
+                                <form asp-action="Delete" asp-route-id="@actionStep.ActionStepId" method="post" class="mb-0">
+                                    <input type="hidden" name="goalId" value="@ViewData["GoalId"]" />
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+else
+{
+    <p>No action steps found for this goal.</p>
+}
+
+@section Styles {
+    <style>
+        .card-header {
+            font-family: Arial, sans-serif;
+            font-size: 1.25rem; 
+        }
+
+        .card-title {
+            font-family: Arial, sans-serif;
+            font-size: 1.25rem;
+        }
+
+        .card-body {
+            font-family: Arial, sans-serif;
+            font-size: 1rem; 
+        }
+
+        .card-footer {
+            background-color: #f8f9fa; 
+        }
+
+        .btn-info, .btn-primary, .btn-danger {
+            margin-right: 5px; 
+        }
+    </style>
+}

@@ -1,0 +1,158 @@
+﻿@model ActionStepTrackingBoardViewModel
+@using Goal_Management_Web_App.Enums
+@{
+    ViewData["Title"] = $"Track Actions to take to {Model.Goal.Title}";
+}
+
+<h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Not Started Column -->
+        <div class="col-md-3 d-flex flex-column">
+            <div id="NotStarted" class="status-container flex-grow-1 border rounded p-3 mb-3 bg-light" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="status-header bg-dark text-white p-2 rounded mb-3">
+                    <h3 class="text-center mb-0">Not Started</h3>
+                </div>
+                @foreach (var action in Model.Actions.Where(a => a.Status == Status.NotStarted))
+                {
+                    <div id="action-@action.ActionStepId" class="action-item border p-3 mb-3 rounded shadow-sm" draggable="true" ondragstart="drag(event)" style="background-color: #d6d6d6;">
+                        <h5 class="mb-2">@action.Subject</h5>
+                        <p class="mb-0">@action.Description</p>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- In Progress Column -->
+        <div class="col-md-3 d-flex flex-column">
+            <div id="InProgress" class="status-container flex-grow-1 border rounded p-3 mb-3 bg-light" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="status-header bg-dark text-white p-2 rounded mb-3">
+                    <h3 class="text-center mb-0">In Progress</h3>
+                </div>
+                @foreach (var action in Model.Actions.Where(a => a.Status == Status.InProgress))
+                {
+                    <div id="action-@action.ActionStepId" class="action-item border p-3 mb-3 rounded shadow-sm" draggable="true" ondragstart="drag(event)" style="background-color: #f5c6cb;">
+                        <h5 class="mb-2">@action.Subject</h5>
+                        <p class="mb-0">@action.Description</p>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- On Hold Column -->
+        <div class="col-md-3 d-flex flex-column">
+            <div id="OnHold" class="status-container flex-grow-1 border rounded p-3 mb-3 bg-light" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="status-header bg-dark text-white p-2 rounded mb-3">
+                    <h3 class="text-center mb-0">On Hold</h3>
+                </div>
+                @foreach (var action in Model.Actions.Where(a => a.Status == Status.OnHold))
+                {
+                    <div id="action-@action.ActionStepId" class="action-item border p-3 mb-3 rounded shadow-sm" draggable="true" ondragstart="drag(event)" style="background-color: #ffeeba;">
+                        <h5 class="mb-2">@action.Subject</h5>
+                        <p class="mb-0">@action.Description</p>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Complete Column -->
+        <div class="col-md-3 d-flex flex-column">
+            <div id="Complete" class="status-container flex-grow-1 border rounded p-3 mb-3 bg-light" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="status-header bg-dark text-white p-2 rounded mb-3">
+                    <h3 class="text-center mb-0">Complete</h3>
+                </div>
+                @foreach (var action in Model.Actions.Where(a => a.Status == Status.Complete))
+                {
+                    <div id="action-@action.ActionStepId" class="action-item border p-3 mb-3 rounded shadow-sm" draggable="true" ondragstart="drag(event)" style="background-color: #c3e6cb;">
+                        <h5 class="mb-2">@action.Subject</h5>
+                        <p class="mb-0">@action.Description</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Button to go back to the Goal Tracking Board -->
+<div class="container mt-4 mb-4">
+    <a asp-controller="Goal" asp-action="GoalTrackingBoard" class="btn btn-primary w-100">
+        Back to Goal Tracking Board
+    </a>
+</div>
+
+@section Scripts {
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault(); // Prevent default handling of the element (required for drop to work)
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id); // Store the ID of the dragged element
+        }
+
+        function drop(ev) {
+            ev.preventDefault(); // Prevent default handling of the drop event
+            var data = ev.dataTransfer.getData("text"); // Get the ID of the dragged element
+            var draggedElement = document.getElementById(data); // Get the element being dragged
+            var target = ev.target; // Get the drop target
+
+            // Ensure the drop target is a container
+            while (target && !target.classList.contains('status-container')) {
+                target = target.parentElement; // Traverse up the DOM if the target is not a container
+            }
+
+            if (target) {
+                // Append dragged element to the target container
+                target.appendChild(draggedElement);
+
+                // Update the action status in the backend
+                var actionId = data.split('-')[1]; // Extract the action ID from the element ID
+                var newStatus = getStatusFromContainerId(target.id); // Get the new status from the container ID
+
+                fetch('/ActionStep/UpdateStatus', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ actionStepId: actionId, newStatus: newStatus }) // Send the action ID and new status to the server
+                }).then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            console.log('Action status updated successfully.');
+                            // Update the color of the action item to reflect the new status
+                            updateActionColor(draggedElement, newStatus);
+                        } else {
+                            console.error('Failed to update action status:', data.message);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error updating action status:', error);
+                    });
+            }
+        }
+
+        function getStatusFromContainerId(containerId) {
+            switch (containerId) {
+                case 'NotStarted': return 0; // Status for "Not Started"
+                case 'InProgress': return 1; // Status for "In Progress"
+                case 'OnHold': return 2; // Status for "On Hold"
+                case 'Complete': return 3; // Status for "Complete"
+                default: return -1; // Fallback status if container ID is unknown
+            }
+        }
+
+        function updateActionColor(element, status) {
+            var color;
+            switch (status) {
+                case 0: color = '#d6d6d6'; break; // Color for "Not Started"
+                case 1: color = '#f5c6cb'; break; // Color for "In Progress"
+                case 2: color = '#ffeeba'; break; // Color for "On Hold"
+                case 3: color = '#c3e6cb'; break; // Color for "Complete"
+                default: color = '#ffffff'; break; // Fallback color
+            }
+            element.style.backgroundColor = color; // Apply the new background color to the element
+        }
+    </script>
+}
+

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Goal-Management-Web-App.props" />
+</Project>

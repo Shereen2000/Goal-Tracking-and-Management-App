@@ -1,0 +1,45 @@
+﻿@model Goal
+
+@{
+    ViewData["Title"] = "Goal Details";
+}
+
+<h2 class="page-title">@ViewData["Title"]</h2>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h3 class="card-title">@Model.Title</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> @Model.Description</p>
+                    <p><strong>Motivation:</strong> @Model.Motivation</p>
+                    <p><strong>Status:</strong> @Model.Status.ToString()</p>
+                </div>
+                <div class="card-footer text-end">
+                    <a asp-action="Edit" asp-route-id="@Model.GoalId" class="btn btn-primary">Edit</a>
+                    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                    <!-- Button to view action steps -->
+                    <a asp-controller="ActionStep" asp-action="Index" asp-route-goalId="@Model.GoalId" class="btn btn-info">View Action Steps</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .page-title {
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem; /* Adjust the size to match the navigation title */
+            font-weight: bold; /* Optional: Make the title bold */
+        }
+
+        .card-title {
+            font-family: Arial, sans-serif;
+            font-size: 1.25rem; /* Adjust the size to match the navigation title */
+        }
+    </style>
+}

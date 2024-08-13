@@ -1,0 +1,59 @@
+﻿@model Goal
+
+<h2 class="page-title">Add New Goal</h2>
+
+<form asp-action="Add">
+    <!-- Form fields for Goal properties -->
+    <div class="form-group mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Motivation" class="form-label"></label>
+        <input asp-for="Motivation" class="form-control" />
+        <span asp-validation-for="Motivation" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <button type="submit" class="btn btn-primary">Add Goal</button>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</form>
+
+@section Styles {
+    <style>
+        .page-title {
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem; /* Adjust to match card title size */
+            font-weight: bold; /* Make the title bold */
+            margin-bottom: 1.5rem; /* Space below the title */
+        }
+
+        .form-label {
+            font-family: Arial, sans-serif;
+            font-size: 1rem; /* Consistent with card text size */
+            font-weight: bold; /* Label text should stand out */
+        }
+
+        .form-control {
+            font-family: Arial, sans-serif;
+            font-size: 1rem; /* Consistent with card text size */
+            padding: 0.75rem 1.25rem; /* Match padding with card fields */
+        }
+
+        .btn-primary, .btn-secondary {
+            font-family: Arial, sans-serif;
+            font-size: 1rem; /* Match button text size */
+            padding: 0.75rem 1.25rem; /* Match button padding */
+        }
+
+        .btn-secondary {
+            margin-left: 0.5rem; /* Space between buttons */
+        }
+    </style>
+}

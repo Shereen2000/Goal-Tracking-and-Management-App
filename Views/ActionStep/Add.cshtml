@@ -1,0 +1,73 @@
+﻿@model Goal_Management_Web_App.Models.ActionStep
+
+@{
+    ViewData["Title"] = "Add New Action Step";
+    // Set default value for DueDate to today's date
+    var today = DateTime.Today.ToString("yyyy-MM-dd");
+}
+
+<h2 class="page-title">@ViewData["Title"]</h2>
+
+<form asp-action="Add" method="post">
+    <div class="form-group mb-3">
+        <label asp-for="Subject" class="form-label"></label>
+        <input asp-for="Subject" class="form-control" />
+        <span asp-validation-for="Subject" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3" style="display: none;">
+        <label asp-for="Status" class="form-label"></label>
+        <input asp-for="Status" type="hidden" value="NotStarted" />
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="DueDate" class="form-label"></label>
+        <input asp-for="DueDate" type="date" class="form-control" value="@today" />
+        <span asp-validation-for="DueDate" class="text-danger"></span>
+    </div>
+
+    <!-- Hidden field for GoalId -->
+    <input type="hidden" asp-for="GoalId" />
+
+    <div class="form-group mb-3">
+        <button type="submit" class="btn btn-primary">Add Action Step</button>
+        <a asp-action="Index" asp-route-goalId="@Model.GoalId" class="btn btn-secondary">Back to List</a>
+    </div>
+</form>
+
+@section Styles {
+    <style>
+        .page-title {
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem; /* Consistent with other titles */
+            font-weight: bold; /* Make the title bold */
+            margin-bottom: 1.5rem; /* Space below the title */
+        }
+
+        .form-label {
+            font-family: Arial, sans-serif;
+            font-size: 1rem; /* Consistent with other form labels */
+            font-weight: bold; /* Make labels stand out */
+        }
+
+        .form-control, .form-select {
+            font-family: Arial, sans-serif;
+            font-size: 1rem; /* Match card text size */
+            padding: 0.75rem 1.25rem; /* Consistent padding */
+        }
+
+        .btn-primary, .btn-secondary {
+            font-family: Arial, sans-serif;
+            font-size: 1rem; /* Consistent with other buttons */
+            padding: 0.75rem 1.25rem; /* Consistent button padding */
+        }
+
+        .btn-secondary {
+            margin-left: 0.5rem; /* Space between buttons */
+        }
+    </style>
+}

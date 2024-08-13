@@ -1,0 +1,557 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\controllers\\actionstepcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:controllers\\actionstepcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\controllers\\goalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:controllers\\goalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\data\\repositories\\actionsteprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:data\\repositories\\actionsteprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\data\\repositories\\goalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:data\\repositories\\goalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\data\\repositories\\iactionsteprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:data\\repositories\\iactionsteprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\data\\repositories\\igoalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:data\\repositories\\igoalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\data\\seedidentitydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:data\\seedidentitydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\views\\goal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:views\\goal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\views\\goal\\goaltrackingboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:views\\goal\\goaltrackingboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\views\\goal\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:views\\goal\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\views\\goal\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:views\\goal\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\views\\goal\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:views\\goal\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\views\\actionstep\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:views\\actionstep\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\views\\actionstep\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:views\\actionstep\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\views\\actionstep\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:views\\actionstep\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\views\\actionstep\\actionsteptrackingboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:views\\actionstep\\actionsteptrackingboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\models\\viewmodels\\goalcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:models\\viewmodels\\goalcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\models\\viewmodels\\actionsteptrackingboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:models\\viewmodels\\actionsteptrackingboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\models\\viewmodels\\actionstepstatusupdateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:models\\viewmodels\\actionstepstatusupdateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\models\\viewmodels\\goalstatusupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:models\\viewmodels\\goalstatusupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\models\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:models\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\models\\actionstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:models\\actionstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\models\\viewmodels\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:models\\viewmodels\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\models\\viewmodels\\actionstepviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:models\\viewmodels\\actionstepviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|e:\\goal management app\\goal-management\\goal-management-web-app\\models\\viewmodels\\goallistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A04FA0D-B3D0-40F1-981F-DAAD6C0BE76D}|Goal-Management-Web-App.csproj|solutionrelative:models\\viewmodels\\goallistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 22,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ActionStep.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ActionStep.cs",
+              "RelativeDocumentMoniker": "Models\\ActionStep.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ActionStep.cs",
+              "RelativeToolTip": "Models\\ActionStep.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T20:50:14.188Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:33:24.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SeedIdentityData.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Data\\SeedIdentityData.cs",
+              "RelativeDocumentMoniker": "Data\\SeedIdentityData.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Data\\SeedIdentityData.cs",
+              "RelativeToolTip": "Data\\SeedIdentityData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:33:19.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T14:33:07.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T14:33:03.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\ActionStep\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\ActionStep\\Index.cshtml",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\ActionStep\\Index.cshtml",
+              "RelativeToolTip": "Views\\ActionStep\\Index.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEwAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T14:22:07.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\ActionStep\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\ActionStep\\Details.cshtml",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\ActionStep\\Details.cshtml",
+              "RelativeToolTip": "Views\\ActionStep\\Details.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAGoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T14:21:50.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T11:45:41.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAIwEwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T11:42:49.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IActionStepRepository.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Data\\Repositories\\IActionStepRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\IActionStepRepository.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Data\\Repositories\\IActionStepRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\IActionStepRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:49:43.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IGoalRepository.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Data\\Repositories\\IGoalRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\IGoalRepository.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Data\\Repositories\\IGoalRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\IGoalRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:49:38.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ActionStepRepository.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Data\\Repositories\\ActionStepRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\ActionStepRepository.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Data\\Repositories\\ActionStepRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\ActionStepRepository.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAiwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:48:22.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:48:54.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Goal\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Goal\\Index.cshtml",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Goal\\Index.cshtml",
+              "RelativeToolTip": "Views\\Goal\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T14:47:47.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Goal\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Goal\\Edit.cshtml",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Goal\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Goal\\Edit.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T14:47:20.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Goal\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Goal\\Details.cshtml",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Goal\\Details.cshtml",
+              "RelativeToolTip": "Views\\Goal\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T14:47:17.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Goal\\Add.cshtml",
+              "RelativeDocumentMoniker": "Views\\Goal\\Add.cshtml",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Goal\\Add.cshtml",
+              "RelativeToolTip": "Views\\Goal\\Add.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T14:47:14.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:47:11.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GoalCreateViewModel.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\GoalCreateViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\GoalCreateViewModel.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\GoalCreateViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\GoalCreateViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:47:08.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ErrorViewModel.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:47:07.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ActionStepViewModel.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\ActionStepViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ActionStepViewModel.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\ActionStepViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ActionStepViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:47:06.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\ActionStep\\Add.cshtml",
+              "RelativeDocumentMoniker": "Views\\ActionStep\\Add.cshtml",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\ActionStep\\Add.cshtml",
+              "RelativeToolTip": "Views\\ActionStep\\Add.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEUAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T14:41:42.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAA5wGkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:33:06.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "GoalListViewModel.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\GoalListViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\GoalListViewModel.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\GoalListViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\GoalListViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:30:05.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GoalStatusUpdateModel.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\GoalStatusUpdateModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\GoalStatusUpdateModel.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\GoalStatusUpdateModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\GoalStatusUpdateModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:30:03.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ActionStepTrackingBoardViewModel.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\ActionStepTrackingBoardViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ActionStepTrackingBoardViewModel.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\ActionStepTrackingBoardViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ActionStepTrackingBoardViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:29:09.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ActionStepController.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Controllers\\ActionStepController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ActionStepController.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Controllers\\ActionStepController.cs",
+              "RelativeToolTip": "Controllers\\ActionStepController.cs",
+              "ViewState": "AQIAAK0AAAAAAAAAAAAkwLcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:26:27.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GoalTrackingBoard.cshtml",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Goal\\GoalTrackingBoard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Goal\\GoalTrackingBoard.cshtml",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\Goal\\GoalTrackingBoard.cshtml",
+              "RelativeToolTip": "Views\\Goal\\GoalTrackingBoard.cshtml",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAAAJcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T14:21:38.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ActionStepStatusUpdateViewModel.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\ActionStepStatusUpdateViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ActionStepStatusUpdateViewModel.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Models\\ViewModels\\ActionStepStatusUpdateViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ActionStepStatusUpdateViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:21:30.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ActionStepTrackingBoard.cshtml",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\ActionStep\\ActionStepTrackingBoard.cshtml",
+              "RelativeDocumentMoniker": "Views\\ActionStep\\ActionStepTrackingBoard.cshtml",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Views\\ActionStep\\ActionStepTrackingBoard.cshtml",
+              "RelativeToolTip": "Views\\ActionStep\\ActionStepTrackingBoard.cshtml",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAAAF0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T14:21:26.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GoalController.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Controllers\\GoalController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GoalController.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Controllers\\GoalController.cs",
+              "RelativeToolTip": "Controllers\\GoalController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAwwDUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:20:47.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GoalRepository.cs",
+              "DocumentMoniker": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Data\\Repositories\\GoalRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\GoalRepository.cs",
+              "ToolTip": "E:\\Goal Management App\\Goal-Management\\Goal-Management-Web-App\\Data\\Repositories\\GoalRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\GoalRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:20:10.89Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

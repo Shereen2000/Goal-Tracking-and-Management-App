@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Goal-Management-Web-App.props" />
+</Project>

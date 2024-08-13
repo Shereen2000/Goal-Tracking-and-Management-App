@@ -1,0 +1,80 @@
+﻿@model GoalListViewModel
+
+@{
+    ViewData["Title"] = "Goals";
+}
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        @TempData["Message"]
+    </div>
+}
+
+<p class="p-3">
+    <a class="btn btn-primary" asp-action="Add">Add New Goal</a>
+</p>
+
+@if (Model.Goals != null && Model.Goals.Any())
+{
+    <div class="container">
+        <div class="row">
+            @foreach (var goal in Model.Goals)
+            {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">
+                            <h3 class="card-title">@goal.Title</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Status:</strong> @goal.Status</p>
+                        </div>
+                        <div class="card-footer text-end">
+                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                <a class="btn btn-info" asp-action="Details" asp-route-id="@goal.GoalId">Details</a>
+                                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@goal.GoalId">Edit</a>
+                                <form asp-action="Delete" asp-route-id="@goal.GoalId" method="post" class="mb-0">
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+else
+{
+    <p>No goals created.</p>
+}
+
+@section Styles {
+    <style>
+        .card-header {
+            font-family: Arial, sans-serif;
+            font-size: 1.25rem; /* Adjust to match card title size in action steps */
+            background-color: #343a40; /* Dark background */
+            color: #ffffff; /* White text */
+        }
+
+        .card-title {
+            font-family: Arial, sans-serif;
+            font-size: 1.25rem; /* Matches card title size in action steps */
+        }
+
+        .card-body {
+            font-family: Arial, sans-serif;
+            font-size: 1rem; /* Matches card text size in action steps */
+        }
+
+        .card-footer {
+            background-color: #f8f9fa; /* Matches card footer background color in action steps */
+        }
+
+        .btn-info, .btn-primary, .btn-danger {
+            margin-right: 5px; /* Add some spacing between buttons */
+        }
+    </style>
+}

@@ -1,0 +1,106 @@
+﻿@model ActionStep
+
+@{
+    ViewData["Title"] = "Action Step Details";
+    var today = DateTime.Now.Date;
+    var isPastDueDate = Model.DueDate < today;
+}
+
+<h2 class="page-title">Action Step Details</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h3 class="card-title">Details for Action Step</h3>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h4 class="form-label">Subject</h4>
+                        <p class="form-control-plaintext">@Model.Subject</p>
+                    </div>
+                    <div class="mb-3">
+                        <h4 class="form-label">Status</h4>
+                        <p class="form-control-plaintext">@Model.Status</p>
+                    </div>
+                    <div class="mb-3">
+                        <h4 class="form-label">Description</h4>
+                        <p class="form-control-plaintext">@Model.Description</p>
+                    </div>
+                    <div class="mb-3">
+                        <h4 class="form-label">Due Date</h4>
+                        <p class="form-control-plaintext @if (isPastDueDate) {
+                        <text>text-danger</text>
+ }">@Model.DueDate.ToShortDateString()</p>
+                    </div>
+                </div>
+                <div class="card-footer text-end">
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <a asp-action="Edit" asp-route-id="@Model.ActionStepId" class="btn btn-primary">Edit</a>
+                        <a asp-action="Index" asp-route-goalId="@Model.GoalId" class="btn btn-secondary">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .page-title {
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem; /* Matches card title size */
+            font-weight: bold; /* Make the title bold */
+            margin-bottom: 1.5rem; /* Space below the title */
+        }
+
+        .form-label {
+            font-family: Arial, sans-serif;
+            font-size: 1rem; /* Matches form label text size */
+            font-weight: bold; /* Labels should stand out */
+        }
+
+        .form-control-plaintext {
+            font-family: Arial, sans-serif;
+            font-size: 1rem; /* Matches card text size */
+            padding: 0.75rem 1.25rem; /* Match padding with card fields */
+            background-color: #f8f9fa; /* Match background color for plaintext */
+            border: 1px solid #dee2e6; /* Border to match form controls */
+            border-radius: 0.25rem; /* Consistent border radius */
+        }
+
+        .btn-primary, .btn-secondary {
+            font-family: Arial, sans-serif;
+            font-size: 1rem; /* Match button text size */
+            padding: 0.75rem 1.25rem; /* Match button padding */
+        }
+
+        .btn-secondary {
+            margin-left: 0.5rem; /* Space between buttons */
+        }
+
+        .card-header {
+            font-family: Arial, sans-serif;
+            font-size: 1.25rem; /* Matches card title size in goals */
+        }
+
+        .card-title {
+            font-family: Arial, sans-serif;
+            font-size: 1.25rem; /* Matches card title size in goals */
+        }
+
+        .card-body {
+            font-family: Arial, sans-serif;
+            font-size: 1rem; /* Matches card text size in goals */
+        }
+
+        .card-footer {
+            background-color: #f8f9fa; /* Matches the card footer background color */
+        }
+
+        .text-danger {
+            color: #dc3545; /* Red color for overdue dates */
+        }
+    </style>
+}

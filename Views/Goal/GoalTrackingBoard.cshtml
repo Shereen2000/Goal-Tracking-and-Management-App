@@ -1,0 +1,152 @@
+﻿@model GoalListViewModel
+@using Goal_Management_Web_App.Enums
+@{
+    ViewData["Title"] = "Manage and track the progress of your goals";
+}
+
+<h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Not Started Column -->
+        <div class="col-md-3 d-flex flex-column">
+            <div id="NotStarted" class="status-container flex-grow-1 border rounded p-3 mb-3 bg-light" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="status-header bg-dark text-white p-2 rounded mb-3">
+                    <h3 class="text-center mb-0">Not Started</h3>
+                </div>
+                @foreach (var goal in Model.Goals.Where(g => g.Status == Status.NotStarted))
+                {
+                    <div id="goal-@goal.GoalId" class="goal-item border p-3 mb-3 rounded shadow-sm" draggable="true" ondragstart="drag(event)" style="background-color: #d6d6d6;" onclick="navigateToGoal(@goal.GoalId)">
+                        <h5 class="mb-2">@goal.Title</h5>
+                        <p class="mb-0">@goal.Description</p>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- In Progress Column -->
+        <div class="col-md-3 d-flex flex-column">
+            <div id="InProgress" class="status-container flex-grow-1 border rounded p-3 mb-3 bg-light" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="status-header bg-dark text-white p-2 rounded mb-3">
+                    <h3 class="text-center mb-0">In Progress</h3>
+                </div>
+                @foreach (var goal in Model.Goals.Where(g => g.Status == Status.InProgress))
+                {
+                    <div id="goal-@goal.GoalId" class="goal-item border p-3 mb-3 rounded shadow-sm" draggable="true" ondragstart="drag(event)" style="background-color: #f5c6cb;" onclick="navigateToGoal(@goal.GoalId)">
+                        <h5 class="mb-2">@goal.Title</h5>
+                        <p class="mb-0">@goal.Description</p>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- On Hold Column -->
+        <div class="col-md-3 d-flex flex-column">
+            <div id="OnHold" class="status-container flex-grow-1 border rounded p-3 mb-3 bg-light" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="status-header bg-dark text-white p-2 rounded mb-3">
+                    <h3 class="text-center mb-0">On Hold</h3>
+                </div>
+                @foreach (var goal in Model.Goals.Where(g => g.Status == Status.OnHold))
+                {
+                    <div id="goal-@goal.GoalId" class="goal-item border p-3 mb-3 rounded shadow-sm" draggable="true" ondragstart="drag(event)" style="background-color: #ffeeba;" onclick="navigateToGoal(@goal.GoalId)">
+                        <h5 class="mb-2">@goal.Title</h5>
+                        <p class="mb-0">@goal.Description</p>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Complete Column -->
+        <div class="col-md-3 d-flex flex-column">
+            <div id="Complete" class="status-container flex-grow-1 border rounded p-3 mb-3 bg-light" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="status-header bg-dark text-white p-2 rounded mb-3">
+                    <h3 class="text-center mb-0">Complete</h3>
+                </div>
+                @foreach (var goal in Model.Goals.Where(g => g.Status == Status.Complete))
+                {
+                    <div id="goal-@goal.GoalId" class="goal-item border p-3 mb-3 rounded shadow-sm" draggable="true" ondragstart="drag(event)" style="background-color: #c3e6cb;" onclick="navigateToGoal(@goal.GoalId)">
+                        <h5 class="mb-2">@goal.Title</h5>
+                        <p class="mb-0">@goal.Description</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            var draggedElement = document.getElementById(data);
+            var target = ev.target;
+
+            // Ensure the drop target is a container
+            while (target && !target.classList.contains('status-container')) {
+                target = target.parentElement;
+            }
+
+            if (target) {
+                // Append dragged element to target container
+                target.appendChild(draggedElement);
+
+                // Update the goal status in the backend
+                var goalId = data.split('-')[1];
+                var newStatus = getStatusFromContainerId(target.id);
+
+                fetch('/Goal/UpdateStatus', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ goalId: goalId, newStatus: newStatus })
+                }).then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            console.log('Goal status updated successfully.');
+
+                            // Update the color of the goal item
+                            updateGoalColor(draggedElement, newStatus);
+                        } else {
+                            console.error('Failed to update goal status.');
+                        }
+                    });
+            }
+        }
+
+        function getStatusFromContainerId(containerId) {
+            switch (containerId) {
+                case 'NotStarted': return 0; // Value for Status.NotStarted
+                case 'InProgress': return 1; // Value for Status.InProgress
+                case 'OnHold': return 2; // Value for Status.OnHold
+                case 'Complete': return 3; // Value for Status.Complete
+                default: return -1;
+            }
+        }
+
+        function updateGoalColor(element, status) {
+            var color;
+            switch (status) {
+                case 0: color = '#d6d6d6'; break; // Color for Status.NotStarted
+                case 1: color = '#f5c6cb'; break; // Color for Status.InProgress
+                case 2: color = '#ffeeba'; break; // Color for Status.OnHold
+                case 3: color = '#c3e6cb'; break; // Color for Status.Complete
+                default: color = '#d6d6d6'; break; // Default color
+            }
+            element.style.backgroundColor = color;
+        }
+
+        function navigateToGoal(goalId) {
+            window.location.href = '@Url.Action("ActionStepTrackingBoard", "ActionStep")' + '?goalId=' + goalId;
+        }
+    </script>
+}
